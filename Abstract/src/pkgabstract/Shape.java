@@ -10,5 +10,6 @@ package pkgabstract;
  * @author fa20-bse-001
  */
 public interface Shape {
-   void draw();
+   double getArea();
+   double getPerimeter();
 }

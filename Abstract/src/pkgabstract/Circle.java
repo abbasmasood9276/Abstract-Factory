@@ -9,22 +9,20 @@ package pkgabstract;
  *
  * @author fa20-bse-001
  */
-public class Rectangle implements Shape {
-   private double width;
-   private double height;
+public class Circle implements Shape {
+   private double radius;
 
-   public Rectangle(double width, double height) {
-      this.width = width;
-      this.height = height;
+   public Circle(double radius) {
+      this.radius = radius;
    }
 
    @Override
    public double getArea() {
-      return width * height;
+      return Math.PI * radius * radius;
    }
 
    @Override
    public double getPerimeter() {
-      return 2 * (width + height);
+      return 2 * Math.PI * radius;
    }
 }

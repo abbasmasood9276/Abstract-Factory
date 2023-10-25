@@ -9,9 +9,20 @@ package pkgabstract;
  *
  * @author fa20-bse-001
  */
-public class RoundedRectangle implements Shape {
+public class Square implements Shape {
+   private double side;
+
+   public Square(double side) {
+      this.side = side;
+   }
+
    @Override
-   public void draw() {
-      System.out.println("Inside RoundedRectangle::draw() method.");
+   public double getArea() {
+      return side * side;
+   }
+
+   @Override
+   public double getPerimeter() {
+      return 4 * side;
    }
 }
